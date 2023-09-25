@@ -32,6 +32,7 @@ Para poder enviar los emails es necesario setear las variables `EMAIL` y `EMAIL_
 
 ### Products
 
+- `GET /api/products/mockingproducts`: Retorna un listado de 100 productos mockeados. (**NUEVO**)
 - `GET /api/products`: Retorna todos los productos paginados. Recibe parámetros opcionales: `limit`, `page`, `sort`, `category` y `available`
 - `GET /api/products/:id`: Retorna el producto por id.
 - `POST /api/products`: Crea un producto nuevo. Se debe enviar con archivo de imagen. Solo el admin puede acceder a este endpoint.
