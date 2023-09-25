@@ -13,13 +13,13 @@ export default class Services {
   };
 
   getById = async (id) => {
-    // try {
-    const item = await this.dao.getById(id);
-    return item ?? false;
-    // } catch (error) {
-    //   console.log("getById service");
-    //   throw new Error(error.message);
-    // }
+    try {
+      const item = await this.dao.getById(id);
+      return item ?? false;
+    } catch (error) {
+      console.log("getById service");
+      throw new Error(error.message);
+    }
   };
 
   create = async (obj) => {
